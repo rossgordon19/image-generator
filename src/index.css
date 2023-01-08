@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0d3b66;
+  font-family: 'Abel', sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #f4d35e;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-input {
+  height: 35px;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+.result-image {
+  margin-top: 20px;
+  width: 350px;
+}
