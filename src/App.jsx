@@ -27,12 +27,16 @@ function App() {
     <div className="app-main">
       {loading ? (
         <>
-          <h2 className='text-white text-4xl text-center align-center'>Generating Image...</h2>
+          <h2 className="text-white text-4xl text-center align-center">
+            Generating Image...
+          </h2>
           <div class="load"></div>
         </>
       ) : (
         <>
-          <h1 className="text-white text-4xl p-4 font-bold">AI Image Generator</h1>
+          <h1 className="text-white text-4xl p-4 font-bold">
+            AI Image Generator
+          </h1>
           <textarea
             className="p-2"
             placeholder="Start typing to generate an image"
