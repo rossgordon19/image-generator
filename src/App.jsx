@@ -34,9 +34,10 @@ function App() {
         </>
       ) : (
         <>
-          <h1 className="text-white text-4xl p-4 font-bold">
+          <a href='/'><h1 className="text-white text-4xl p-4 font-bold">
             AI Image Generator
           </h1>
+          </a>
           <textarea
             className="p-2"
             placeholder="Start typing to generate an image"
