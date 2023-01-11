@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #0d3b66;
+  background-color: #242423;
   font-family: 'Abel', sans-serif;
 }
 
@@ -16,26 +16,55 @@ body {
   text-align: center;
 }
 
-h1 {
-  color: #f4d35e;
-}
-
 .app-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.app-input {
-  height: 35px;
-  margin: 20px;
-  border: 2px solid black;
-  padding: 10px;
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
-}
-
 .result-image {
   margin-top: 20px;
   width: 350px;
+}
+
+/* Loading Animation */
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to { 
+      transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to { 
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.load {
+width: 100px;
+height: 100px;
+margin: 110px auto 0;
+border:solid 10px #8822aa;
+border-radius: 50%;
+border-right-color: transparent;
+border-bottom-color: transparent;
+ -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         1.0s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+    
+     transition: all 0.5s ease-in;
+  animation-name:             rotate; 
+  animation-duration:         1.0s; 
+  animation-iteration-count:  infinite;
+  animation-timing-function: linear; 
 }
