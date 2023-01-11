@@ -28,7 +28,7 @@ function App() {
       {loading ? (
         <>
           <h2 className="text-white text-4xl text-center align-center">
-            Generating Image...
+            Generating Image.
           </h2>
           <div class="load"></div>
         </>
