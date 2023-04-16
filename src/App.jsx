@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="app-main">
+    <div className="app-main min-h-screen flex flex-col justify-center items-center">
       {loading ? (
         <>
           <h2 className="text-white text-4xl text-center align-center">
@@ -34,25 +34,26 @@ function App() {
         </>
       ) : (
         <>
-          <a href='/'><h1 className="text-white text-4xl p-4 font-bold">
-            AI Image Generator
-          </h1>
+          <a href="/">
+            <h1 className="text-white text-4xl p-4 font-bold">
+              AI Image Generator
+            </h1>
           </a>
           <textarea
             className="p-2"
-            placeholder="Start typing to generate an image"
+            placeholder="Describe your image and let AI do the rest"
             onChange={(e) => setPrompt(e.target.value)}
             rows="10"
             cols="40"
           />
           <p className="text-white pt-5 hover:underline">
             Powered by{' '}
-            <a href="https://openai.com/api" target="_blank">
+            <a href="https://openai.com/api" target="_blank" rel="noreferrer">
               OpenAI API
             </a>
           </p>
           <button
-            className="bg-[#F5CB5C] p-2 font-bold mt-8"
+            className="bg-[#F8D210] p-2 font-bold mt-8"
             onClick={generateImage}
           >
             Generate Image

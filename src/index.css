@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #242423;
+  background-color: #17252a;
   font-family: 'Abel', sans-serif;
 }
 
@@ -20,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .result-image {
@@ -31,40 +33,39 @@ body {
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to { 
-      transform: rotate(360deg);
+  to {
+    transform: rotate(360deg);
   }
 }
 
-
 @-webkit-keyframes rotate {
   from {
-      -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
-  to { 
-      -webkit-transform: rotate(360deg);
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 
 .load {
-width: 100px;
-height: 100px;
-margin: 110px auto 0;
-border:solid 10px #F5CB5C;
-border-radius: 50%;
-border-right-color: transparent;
-border-bottom-color: transparent;
- -webkit-transition: all 0.5s ease-in;
-  -webkit-animation-name:             rotate; 
-  -webkit-animation-duration:         1.0s; 
-  -webkit-animation-iteration-count:  infinite;
+  width: 100px;
+  height: 100px;
+  margin: 110px auto 0;
+  border: solid 10px #f5cb5c;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-    
-     transition: all 0.5s ease-in;
-  animation-name:             rotate; 
-  animation-duration:         1.0s; 
-  animation-iteration-count:  infinite;
-  animation-timing-function: linear; 
+
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
